@@ -1,0 +1,103 @@
+/*body*/
+.body{
+        background: linear-gradient( 129.1deg,  rgba(243,199,83,1) 26.8%, rgba(18,235,207,1) 114.1%);
+        background-size: 1200% 1200%;
+    
+        -webkit-animation: AnimationName 10s ease infinite;
+        -moz-animation: AnimationName 10s ease infinite;
+        animation: AnimationName 10s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:99% 0%}
+        50%{background-position:2% 100%}
+        100%{background-position:99% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:99% 0%}
+        50%{background-position:2% 100%}
+        100%{background-position:99% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:99% 0%}
+        50%{background-position:2% 100%}
+        100%{background-position:99% 0%}
+    }
+
+/*carousel*/
+.carousel-item {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+/*Perfil*/
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+/*Texto*/
+
+.slide-c{
+    width: 100%;
+    overflow: hidden;
+    background: rgb(199, 199, 199);
+}
+
+.slide-i{
+    display: flex;
+    position: relative;
+    top: 0; right: 0;
+}
+
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/*Texto animacion*/
+
+@keyframes slideh{
+    0% { right: 0% ;}
+    30%{ right: 0% ;}
+    33%{ right: 100% ;}
+    63%{ right: 100% ;}
+    66%{ right: 200% ;}
+    97%{ right: 200% ;}
+    100%{ right: 0% ;}
+}
+
+.slide-i{animation: slideh linear 15s infinite;}
+
+.slide-i:hover{animation-play-state: paused;}
+
+/**/

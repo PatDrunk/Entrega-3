@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'app/css/style_s.css' %}">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#Perfil" href="#">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lista_producto.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito_compra.html">Carrito</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Descuento">Descuento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Suscripcion">Suscripcion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historial.html">Historial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#Seguimiento">Seguimiento</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container container-fluid">
+        <div class="details">
+            <div class="order">
+                <h1>Order <span>X231CD87</span></h1>
+            </div>
+            <div class="date">
+                <p>Fecha estimada de llegada 14/04/2022</p>
+            </div>
+        </div>
+        
+        <div class="track">
+            <ul id="progress" class="text-center">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class=""></li>
+            </ul>
+        </div>
+        
+        <div class="lists active">
+            <div class="list">
+                <img src="{% static 'app/img/icons8-order-64.png' %}"alt="">
+                <p>Procesando<br>Orden</p>
+            </div>
+
+            <div class="list">
+                <img src="{% static 'app/img/icons8-holding-box-80.png' %}" alt="">
+                <p>Producto <br>Enviado</p>
+            </div>
+
+            <div class="list">
+                <img src="{% static 'app/img/icons8-camión.gif' %}" alt="">
+                <p>Paquete<br>En Ruta</p>
+            </div>
+
+            <div class="list">
+                <img src="{% static 'app/img/icons8-cabaña-52.png' %}" alt="">
+                <p>Compra<br>Entregada</p>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-floating" onclick="location.href ='index_login.html';">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

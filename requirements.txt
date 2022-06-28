@@ -1,0 +1,8 @@
+#pip install -r requirements.txt --user
+django == 4.0.4
+pillow
+django-admin-interface
+django-crispy-forms
+mysqlclient
+PyMySQL
+djangorestframework

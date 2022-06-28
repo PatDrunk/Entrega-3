@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<div class="container-fluid">
+    <div class="row">
+    {% for aux in listaJson %}
+        <div class="col" style="width: 100%; margin: 5px 5px;">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src={{ aux.imagen }} alt="">
+                <div class="card-body">
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Codigo: {{ aux.codigo }}</li>
+                    <li class="list-group-item">Tipo: {{ aux.tipo }}</li>
+                    <li class="list-group-item">Nombre: {{ aux.nombre }}</li>
+                    <li class="list-group-item">Marca: {{ aux.marca }}</li>
+                    <li class="list-group-item">Stock: {{ aux.stock }}</li>
+                    <li class="list-group-item">Precio: ${{ aux.precio }}</li>
+                    <li>
+                        <form action="" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="nombre" id="nombre" value="{{ aux.nombre }}">
+                        <input type="hidden" name="precio" id="precio" value="{{ aux.precio }}">
+                        <input type="hidden" name="imagen" id="imagen" value="{{ aux.imagen }}">
+                        <input onclick="success()" type="submit" value="Comprar" style="cursor: pointer;" class="btn btn-success btn-sm ml-auto">
+                    </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

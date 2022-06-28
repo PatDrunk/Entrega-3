@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block contenido %}
+
+<div id="common-success" class="container" style="background-color:#ffffff ;">
+    <div class="row">
+        <div id="content" class="col-sm-12">
+        <p>Tu orden a sido recibida exitosamente!</p><p>Gracias por comprar con nosotros!</p>
+        <div class="buttons">
+          <div class="pull-right"><a href="{% url 'index_login' %}" class="btn btn-primary">Regresar a tienda</a></div>
+        </div>
+        </div>
+      </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  background-image: url(/img/planta-fondo.jpg);
+  background-repeat: no-repeat;
+  background-position-x:center;
+  background-position-y:center;
+
+}
+
+.card {
+
+  width: 15rem;
+
+
+}
+
+.mask {
+
+  background-color: rgba(251, 251, 251, 0.15);
+
+}
+
+td {
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
